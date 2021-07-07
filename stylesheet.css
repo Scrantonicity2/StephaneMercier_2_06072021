@@ -26,9 +26,15 @@ nav
 {
 
 }
-
-.introduction
+a
 {
-    font-size: xx-small;
+    color: #000000;
 }
+a:hover
+{
+    color:#0065FF
+}
+
+
+
 
