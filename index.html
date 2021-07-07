@@ -10,17 +10,19 @@
 </head>
 <body>
     <header>
-        <h1>Reservia</h1>
-        <h2>S'inscrire</h2>
+        <img src="images/logo/Reservia.svg" />
     </header>
     <body>
-        <a href="#ancreHeberge">Hébergements</a>
-        <a href="#ancreActivite">Activités</a>
+        <nav>
+            <a href="#ancreHeberge">Hébergements</a>
+            <a href="#ancreActivite">Activités</a>
+            <div>S'inscrire</div>
+        </nav>
 
-        <div>Trouvez votre hébergement pour des vacances de rêve<br />
-            En plein centre ville ou en pleine nature
-        </div>
-        <input type="search" id="search" name="search" placeholder="Marseille, France" />
+        <div class="trouvez">Trouvez votre hébergement pour des vacances de rêve</div>
+        <div class="enPlein">En plein centre ville ou en pleine nature</div>
+        
+        <i class="fas fa-map-marker-alt"></i><input type="search" id="search" name="search" placeholder="Marseille, France" />
         <button>Rechercher</button>
         <section>Filtres
             <ul>
@@ -30,54 +32,57 @@
                 <li><i class="fas fa-heart"></i>Familial</li>
             </ul>
         </section>
-        <div>Plus de 500 logements sont disponibles dans cette ville</div> <!--Insert "i" icon on the left in CSS-->
-       <section> <h3 class="populaires">Les plus populaires</h3> <!--Insert "Lrise" icon in CSS-->
-            <div class="hotel1">
-                Hôtel Le soleil du matin<br />
-                Nuit à partir de 128€<br />
-                <!--Insert stars in CSS-->
-            </div>
-            <div class="hotel2">
-                Au coeur de l'eau Chambres d'hôtes<br />
-                Nuit à partir de 71€<br />
-                 <!--Insert stars in CSS-->
-            </div>
-            <div class="hotel3">
-                Hôtel Tout bleu et Blanc<br />
-                Nuit à partir de 68€<br />
-                <!--Insert stars in CSS-->
-            </div>
+        <div><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</div> <!--Insert "i" icon on the left in CSS-->
+       <section> <h3 class="populaires">Les plus populaires <i class="fas fa-chart-line"></i></h3> <!--Insert "Lrise" icon in CSS-->
+            <figure class="hotel1">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" /><br />
+                <figcaption>Hôtel Le soleil du matin<br />
+                Nuit à partir de 128€<br /></figcaption>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </figure>
+            <figure class="hotel2">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au Coeur de l'eau" />
+                <figcaption>Au coeur de l'eau Chambres d'hôtes<br />
+                Nuit à partir de 71€<br /></figcaption>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </figure>
+            <figure class="hotel3">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel Tout Bleu et Blanc" />
+                <figcaption>Hôtel Tout Bleu et Blanc<br />
+                Nuit à partir de 68€<br /></figcaption>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </figure>
         </section>
         <section> <h3 class="hebergement" id="ancreHeberge">Hébergements à Marseille</h3> <!-- Set up an anchor here!-->
             <div class="heberge1">
                 Auberge de la cannebière<br />
                 Nuit à partir de <strong>25€</strong><br />
-                <!--Insert stars in CSS-->
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
             <div class="heberge2">
                 Hôtel du port<br />
                 Nuit à partir de 52€<br />
-                <!--Insert stars in CSS-->
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
             <div class="heberge3">
                 Hôtel Les mouettes<br />
                 Nuit à partir de 76€<br />
-                <!--Insert stars in CSS-->
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
             <div class="heberge4">
                 Hôtel de la mer<br />
                 Nuit à partir de 46€<br />
-                <!--Insert stars in CSS-->
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
             <div class="heberge5">
-                Auberge de la mer<br />
+                Auberge Le Panier<br />
                 Nuit à partir de <strong>23€</strong><br />
-                <!--Insert stars in CSS-->
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
             <div class="heberge6">
                 Hôtel chez Amina<br />
                 Nuit à partir de 96€<br />
-                <!--Insert stars in CSS-->
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
 
         </section>
