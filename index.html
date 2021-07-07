@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -19,17 +19,18 @@
         <div>Trouvez votre hébergement pour des vacances de rêve<br />
             En plein centre ville ou en pleine nature
         </div>
-        <div>Barre de recherche</div> <!--Insert "magnifying glass" icon to the right of the search bar-->
-        <div>Filtres<br />
+        <input type="search" id="search" name="search" placeholder="Marseille, France" />
+        <button>Rechercher</button>
+        <section>Filtres
             <ul>
                 <li>Economique</li>
                 <li>Romantique</li>
                 <li>Animaux autorisés</li>
                 <li>Familial</li>
             </ul>
-        </div>
+        </section>
         <div>Plus de 500 logements sont disponibles dans cette ville</div> <!--Insert "i" icon on the left in CSS-->
-        <h3 class="populaires">Les plus populaires<br /> <!--Insert "Lrise" icon in CSS-->
+       <section> <h3 class="populaires">Les plus populaires</h3> <!--Insert "Lrise" icon in CSS-->
             <div class="hotel1">
                 Hôtel Le soleil du matin<br />
                 Nuit à partir de 128€<br />
@@ -45,9 +46,8 @@
                 Nuit à partir de 68€<br />
                 <!--Insert stars in CSS-->
             </div>
-        </h3>
-        <h3 class="hebergement">
-            Hébergements à Marseille <!-- Set up an anchor here!-->
+        </section>
+        <section> <h3 class="hebergement">Hébergements à Marseille</h3> <!-- Set up an anchor here!-->
             <div class="heberge1">
                 Auberge de la cannebière<br />
                 Nuit à partir de <strong>25€</strong><br />
@@ -79,29 +79,30 @@
                 <!--Insert stars in CSS-->
             </div>
 
-        </h3>
+        </section>
         <div>Afficher plus</div>
-        <h3 class="activité">
-            Activités à Marseille <!--Set up an anchor here!-->
+        <section> <h3 class="activité">Activités à Marseille</h3> <!--Set up an anchor here!-->
             <div class="vieuxport">Vieux Port</div> <!--Picture-->
             <div class="pomègues">Fort de Pomègues</div> <!--Picture-->
             <div class="frioul">Îles du Frioul</div> <!--Picture-->
             <div class="calanques">Parc National des Calanques</div> <!--Picture-->
             <div class="notredame">Notre-Dame-de-la-Garde</div> <!--Picture-->
             <div class="longchamp">Parc Longchamp</div> <!--Picture-->
-        </h3>
+        </section>
     </body>
     <footer>
-        <h4>À propos</h4>
-        <p>Fonctionnement du site</p>
-        <p>Conditions Générales de vente</p>
-        <p>Données et confidentialités</p>
+        <section> <h4>À propos</h4>
+            <p>Fonctionnement du site</p>
+            <p>Conditions Générales de vente</p>
+            <p>Données et confidentialités</p>
+        </section>
         <h4>Nos hébergements</h4>
-        <p>Charte qualité</p>
-        <p>Soumettre votre hôtel</p>
-        <h4>Assistance</h4>
-        <p>Centre d'aide</p>
-        <p>Nous contacter</p>
+            <p>Charte qualité</p>
+            <p>Soumettre votre hôtel</p>
+        <section> <h4>Assistance</h4>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
+        </section>
 
     </footer>
 
