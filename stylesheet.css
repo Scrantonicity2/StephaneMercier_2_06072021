@@ -55,6 +55,8 @@ a:hover
 
 }
 
+
+
 .fa-map-marker-alt
 {
 
@@ -62,7 +64,8 @@ a:hover
 
 button
 {
-
+    background-color: #0065FF;
+    color: #FFFFFF;
 }
 
 .fa-search
@@ -82,42 +85,42 @@ ul
 
 .eco
 {
-
+    
 }
 
 .romantique
 {
-
+    
 }
 
 .animal
 {
-
+    
 }
 
 .famille
 {
-
+    
 }
 
 .fa-money-bill-wave
 {
-
+    color: #0065FF;
 }
 
 .fa-child
 {
-
+    color: #0065FF;
 }
 
 .fa-dog
 {
-
+    color: #0065FF;
 }
 
 .fa-heart
 {
-
+    color: #0065FF;
 }
 
 #info
@@ -195,6 +198,11 @@ heberge6
     
 }
 
+.fa-star
+{
+
+}
+
 .afficher
 {
 
@@ -247,7 +255,7 @@ h4
 
 p
 {
-    
+
 }
 
 
