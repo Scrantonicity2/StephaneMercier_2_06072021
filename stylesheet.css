@@ -22,241 +22,154 @@ body
     font-family: 'ralewaythin';
 }
 
-nav
-{
+    nav
+    {
 
-}
-a
-{
-    color: #000000;
-}
-a:hover
-{
-    color:#0065FF
-}
+    }
 
-.Inscription
-{
-    color: #0065FF;
-}
+        a
+        {
 
-.trouvez
-{
+        }
 
-}
+        a
+        {
 
-.enPlein
-{
+        }
 
-}
+        .Inscription
+        {
 
-#barreRecherche
-{
-
-}
-
-
-
-.fa-map-marker-alt
-{
-
-}
-
-button
-{
-    background-color: #0065FF;
-    color: #FFFFFF;
-}
-
-.fa-search
-{
-    display:none;
-}
-
-#filtres
-{
-
-}
-
-ul
-{
-
-}
-
-.eco
-{
+        }
     
-}
+    .trouvez
+    {
 
-.romantique
-{
+    }  
+
+    .enPlein
+    {
+
+    }
+
+    .barreRecherche
+    {
+
+    }
+        .fa-map-marker-alt
+        {
+
+        }
+
+        button
+        {
+
+        }
+
+        .fa-search
+        {
+            display: none;
+        }
     
-}
+    .filtres
+    {
 
-.animal
-{
+    }
+
+        ul
+        {
+
+        }
+
+        .eco
+        {
+
+        }
+
+            .fa-money-bill-wave
+            {
+
+            }
+        
+        .romantique
+        {
+
+        }
+
+            .fa-child
+            {
+
+            }
+
+        .animal
+        {
+
+        }
+
+            .fa-dog
+            {
+
+            }
+
+        .famille 
+        {
+
+        }
+
+            .fa-heart
+            {
+
+            }
+
+    .populaires
+    {
+
+    }
+
+        .hotel
+       {
+
+       } 
+
+    .hebergement
+    {
+
+    }
+
+        .heberge 
+        {
+
+        }
     
-}
+        .fa-star
+        {
 
-.famille
-{
+        }
     
-}
+    .afficher
+    {
 
-.fa-money-bill-wave
-{
-    color: #0065FF;
-}
+    }
 
-.fa-child
-{
-    color: #0065FF;
-}
+    .activités
+    {
 
-.fa-dog
-{
-    color: #0065FF;
-}
-
-.fa-heart
-{
-    color: #0065FF;
-}
-
-#info
-{
-
-}
-
-.fa-info-circle /* Trouver comment mettre le "i" en bleu et le fond en blanc*/
-{
-    color:#0065FF;
-}
-
-h3
-{
-
-}
-
-#populaires
-{
-
-}
-
-.fa-chart-line
-{
-
-}
-
-.hotel1
-{
-
-}
-
-.hotel2
-{
-
-}
-
-.hotel3
-{
-
-}
-
-#hebergement
-{
-
-}
-
-.heberge1
-{
-
-}
-
-heberge2
-{
-    
-}
-
-heberge3
-{
-    
-}
-
-heberge4
-{
-    
-}
-
-heberge5
-{
-    
-}
-
-heberge6
-{
-    
-}
-
-.fa-star
-{
-
-}
-
-.afficher
-{
-
-}
-
-#activités
-{
-
-}
-
-.vieuxport
-{
-
-}
-
-.pomègues
-{
-
-}
-
-.frioul
-{
-
-}
-
-.calanques
-{
-
-}
-
-.notredame
-{
-
-}
-
-.longchamp
-{
-
-}
+    }
 
 footer
 {
 
 }
 
-h4
-{
+    h4
+    {
 
-}
+    }
 
-p
-{
-
-}
+    p
+    {
+        
+    }
 
 
 
