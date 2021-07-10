@@ -81,11 +81,12 @@ header
 {
     display: flex;
     justify-content: space-between;
+    height: 150px;
 }
 
 body
 {   
-
+    padding: 50px 50px 50px 50px;
 }
 
     nav
@@ -100,6 +101,7 @@ body
         {
             display: flex;
             justify-content: space-around;
+            
             color: #000000;
             text-decoration: none;
 
@@ -108,7 +110,6 @@ body
         a:hover
         {
             color: #0065ff;
-            display: block;
             border: solid top;
         }
 
@@ -120,26 +121,40 @@ body
     
     .trouvez
     {
-
+        font-family: 'ralewaybold';
     }  
 
     .enPlein
     {
-
+        font-family: 'ralewaylight';
     }
 
-    .barreRecherche
+    #barreRecherche
     {
-
+        display:flex;
+        align-items: center;
+        justify-content: start;
     }
         .fa-map-marker-alt
         {
-
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #f2f2f2;
+            border-radius: 35% 0% 0% 35%;
         }
 
         button
         {
-
+            font-family: 'ralewaymedium';
+            border-radius: 0% 35% 35% 0%;
+            background-color: #0065ff;
+            color: #ffffff;
+            width: 100px;
+            height: 40px;
+            border: none;
         }
 
         .fa-search
@@ -147,9 +162,11 @@ body
             display: none;
         }
     
-    .filtres
+    #filtres
     {
-
+        font-family: 'ralewaysemibold';
+        display: flex;
+        flex-direction: row;
     }
 
         ul
@@ -196,6 +213,11 @@ body
             {
 
             }
+
+    .info
+    {
+        font-family: 'ralewaylight';
+    }
 
     .populaires
     {
