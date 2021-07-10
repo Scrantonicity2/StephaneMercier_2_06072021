@@ -81,27 +81,26 @@ header
 {
     display: flex;
     justify-content: space-between;
-    height: 150px;
+    height: 100px;
 }
 
 body
 {   
-    padding: 50px 50px 50px 50px;
+    padding: 5px 5px 5px 50px;
 }
 
     nav
     {
-        font-family: 'ralewaymedium';
-        width: 250px;
+        font-family: 'ralewaymedium', 'Times New Roman', Times, serif;
+        width: 450px;
         display:flex;
         justify-content: space-around;
+        align-items: center;
     }
 
         a
         {
             display: flex;
-            justify-content: space-around;
-            
             color: #000000;
             text-decoration: none;
 
@@ -109,47 +108,62 @@ body
 
         a:hover
         {
+            display: block;
             color: #0065ff;
-            border: solid top;
+            border-top: #0065ff;
+            border-top: #0065ff;
         }
 
         .Inscription
         {
-            font-family: 'ralewaysemibold';
+            font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
             color: #0065ff;
         }
     
     .trouvez
     {
-        font-family: 'ralewaybold';
+        font-family: 'ralewaybold', 'Times New Roman', Times, serif;
     }  
 
     .enPlein
     {
-        font-family: 'ralewaylight';
+        font-family: 'ralewaylight', 'Times New Roman', Times, serif;
     }
 
-    #barreRecherche
+    #barreRecherche /* Aligner icone-textbox-button au niveau des border */
     {
         display:flex;
         align-items: center;
         justify-content: start;
+        margin-top: 1em;
+        margin-bottom: 2em;
     }
         .fa-map-marker-alt
         {
             display:flex;
             justify-content: center;
             align-items: center;
-            width: 40px;
-            height: 40px;
+            width: 2.5em;
+            height: 2.5em;
             background-color: #f2f2f2;
             border-radius: 35% 0% 0% 35%;
         }
 
+        input
+        {
+            font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
+            font-size: 1em;
+            height: 2.5em;
+            border: none;
+            border-top: 1px solid #f2f2f2;
+            border-bottom: 1px solid #f2f2f2;
+        }
+
         button
         {
-            font-family: 'ralewaymedium';
-            border-radius: 0% 35% 35% 0%;
+            font-family: 'ralewaymedium', 'Times New Roman', Times, serif;
+            font-size: 0.9em;
+            border-radius: 0% 20% 20% 0%;
             background-color: #0065ff;
             color: #ffffff;
             width: 100px;
@@ -164,7 +178,7 @@ body
     
     #filtres
     {
-        font-family: 'ralewaysemibold';
+        font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
         display: flex;
         flex-direction: row;
     }
