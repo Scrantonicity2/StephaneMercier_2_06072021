@@ -152,10 +152,16 @@ body
         {
             font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
             font-size: 1em;
-            height: 2.7em;
+            height: 2.4em;
             border: none;
-            border-top: 1px solid #f2f2f2;
-            border-bottom: 1px solid #f2f2f2;
+            border-top: 3px solid #f2f2f2;
+            border-bottom: 3px solid #f2f2f2;
+        }
+
+        input::placeholder
+        {
+            color: #000000;
+            opacity: 1;
         }
 
         #recherche
@@ -174,6 +180,7 @@ body
         {
             display: none;
         }
+
     
     #filtres
     {
@@ -191,6 +198,12 @@ body
         {
             font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
             background-color: #ffffff;
+            box-shadow: none;
+            border: 5px solid #f2f2f2;
+            border-left: none;
+            border-radius: 0% 40% 40% 0%;
+            width: 150px;
+            height: 50px;
         }
         
         button:hover
@@ -278,11 +291,29 @@ body
                     background-color: #DEEBFF;
                     color: #0065ff;
                 }
+    
+    .fa-solid
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #0065ff;
+        border: 2px solid #f2f2f2;
+        border-radius: 50% 50% 50% 50%;
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
 
-    .info
+    .information
     {
         font-family: 'ralewaylight';
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
     }
+
 
     .populaires
     {
