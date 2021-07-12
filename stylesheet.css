@@ -106,11 +106,10 @@ body
 
         }
 
-        a:hover
+        a:hover /* Comment mettre la barre bleue au dessus du lien en hover */
         {
             display: block;
             color: #0065ff;
-            border-top: #0065ff;
             border-top: #0065ff;
         }
 
@@ -144,30 +143,30 @@ body
             justify-content: center;
             align-items: center;
             width: 2.5em;
-            height: 2.5em;
+            height: 2.9em;
             background-color: #f2f2f2;
             border-radius: 35% 0% 0% 35%;
         }
 
-        input
+        input /* Changer couleur du placeholder en black (?)*/
         {
             font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
             font-size: 1em;
-            height: 2.5em;
+            height: 2.7em;
             border: none;
             border-top: 1px solid #f2f2f2;
             border-bottom: 1px solid #f2f2f2;
         }
 
-        button
+        #recherche
         {
             font-family: 'ralewaymedium', 'Times New Roman', Times, serif;
-            font-size: 0.9em;
+            font-size: 0.8em;
             border-radius: 0% 20% 20% 0%;
             background-color: #0065ff;
             color: #ffffff;
-            width: 100px;
-            height: 40px;
+            width: 150px;
+            height: 3.6em;
             border: none;
         }
 
@@ -178,55 +177,107 @@ body
     
     #filtres
     {
-        font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
+        font-family: 'ralewaybold', 'Times New Roman', Times, serif;
+        max-width:  1025px;
+        max-height: 40px;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 1em 3em 1em;
     }
 
-        ul
+        button
         {
-
+            font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
+            background-color: #ffffff;
         }
-
-        .eco
-        {
-
-        }
-
-            .fa-money-bill-wave
-            {
-
-            }
         
-        .romantique
+        button:hover
         {
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:#0065ff;
+            background-color: #deebff;
         }
 
-            .fa-child
+            .eco
             {
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
-        .animal
-        {
-
-        }
-
-            .fa-dog
+                .fa-money-bill-wave
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50% 50% 50% 50%;
+                    background-color: #DEEBFF;
+                    color: #0065ff;
+                    
+                }
+        
+            .romantique
             {
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
-        .famille 
-        {
+                .fa-child
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50% 50% 50% 50%;
+                    background-color: #DEEBFF;
+                    color: #0065ff;
+                }
 
-        }
-
-            .fa-heart
+            .animal
             {
-
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
+
+                .fa-dog
+                {   
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50% 50% 50% 50%;
+                    background-color: #DEEBFF;
+                    color: #0065ff;
+                }
+
+            .famille 
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .fa-heart
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50% 50% 50% 50%;
+                    background-color: #DEEBFF;
+                    color: #0065ff;
+                }
 
     .info
     {

@@ -24,19 +24,19 @@
         <div class="enPlein">En plein centre ville ou en pleine nature</div>
         
         <section id="barreRecherche">
-            <i class="fas fa-map-marker-alt"></i><input type="text" id="search" name="search" placeholder="Marseille, France" />
-            <button>Rechercher</button><i class="fas fa-search"></i><!--Pas oublier de "Display: none;" pour la loupe en version Desktop-->
+            <i class="fas fa-map-marker-alt"></i><input type="text" id="search" name="search" placeholder="Marseille, France" maxlength="20" disabled />
+            <button id="recherche">Rechercher</button><i class="fas fa-search"></i><!--Pas oublier de "Display: none;" pour la loupe en version Desktop-->
         </section>
     
-        <section id="filtres">Filtres
-            <ul>
-                <li class="eco"><i class="fas fa-money-bill-wave"></i>Economique</li>
-                <li class="romantique"><i class="fas fa-child"></i>Romantique</li>
-                <li class="animal"><i class="fas fa-dog"></i>Animaux autorisés</li>
-                <li class="famille"><i class="fas fa-heart"></i>Familial</li>
-            </ul>
+        <section id="filtres">Filtres <!-- Mettre la balise "BUTTON" à la place des "DIV" ?-->
+                <div class="eco"><i class="fas fa-money-bill-wave"></i><button>Economique</button></div>
+                <div class="romantique"><i class="fas fa-child"></i><button>Romantique</button></div>
+                <div class="animal"><i class="fas fa-dog"></i><button>Animaux autorisés</button></div>
+                <div class="famille"><i class="fas fa-heart"></i><button>Familial</button></div>
         </section>
+
         <div class="info"><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</div> 
+
        <section id="populaires"> <h3>Les plus populaires <i class="fas fa-chart-line"></i></h3> <!--Insert "Lrise" icon in CSS-->
             <div class="hotel">
                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" /><br />
