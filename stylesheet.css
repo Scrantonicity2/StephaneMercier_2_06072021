@@ -173,11 +173,11 @@ body
         {
             font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
             font-size: 1.2em;
-            border-radius: 0% 20% 20% 0%;
+            border-radius: 0% 15% 15% 0%;
             background-color: #0065ff;
             color: #ffffff;
             width: 150px;
-            height: 48px;
+            height: 50px;
             border: none;
         }
 
@@ -206,10 +206,9 @@ body
             background-color: #ffffff;
             box-shadow: none;
             border: 5px solid #f2f2f2;
-            border-left: none;
-            border-radius: 0% 40% 40% 0%;
+            border-radius: 50% 50% 50% 50%;
             width: 150px;
-            height: 50px;
+            height: 60px;
         }
         
         button:hover
@@ -331,10 +330,17 @@ body
 
     }
 
-        .hotel
-       {
+        h3
+        {
 
-       } 
+        }
+
+        .hotel
+        {
+
+        } 
+
+    
 
     .hebergement
     {
@@ -363,18 +369,19 @@ body
 
 footer
 {
-
+    font-family: 'ralewaylight', 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    margin-left: none;
+    width: 80%;
+    background-color: #f2f2f2;
 }
 
     h4
     {
-
+        font-family:'ralewaybold', 'Times New Roman', Times, serif;
     }
 
-    p
-    {
-        
-    }
 
 
 
