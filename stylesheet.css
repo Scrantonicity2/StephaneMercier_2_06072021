@@ -1,393 +1,169 @@
-@font-face { /* ralewaybold */
-    font-family: 'ralewaybold';
-    src: url('raleway-fonts/raleway-bold-webfont.eot');
-    src: url('raleway-fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway-fonts/raleway-bold-webfont.woff2') format('woff2'),
-         url('raleway-fonts/raleway-extrabold-webfont.woff') format('woff'),
-         url('raleway-fonts/raleway-light-webfont.ttf') format('truetype'),
-         url('raleway-fonts/raleway-medium-webfont.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 2%;
 }
 
-
-
-
-@font-face { /* ralewayextrabold */
-    font-family: 'ralewayextrabold';
-    src: url('raleway-fonts/raleway-extrabold-webfont.eot');
-    src: url('raleway-fonts/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway-fonts/raleway-extrabold-webfont.woff2') format('woff2'),
-         url('raleway-fonts/raleway-extrabold-webfont.woff') format('woff'),
-         url('raleway-fonts/raleway-extrabold-webfont.ttf') format('truetype'),
-         url('raleway-fonts/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px 5px 50px;
 }
 
-
-
-
-@font-face { /* ralewaylight */
-    font-family: 'ralewaylight';
-    src: url('raleway-fonts/raleway-light-webfont.eot');
-    src: url('raleway-fonts/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway-fonts/raleway-light-webfont.woff2') format('woff2'),
-         url('raleway-fonts/raleway-light-webfont.woff') format('woff'),
-         url('raleway-fonts/raleway-light-webfont.ttf') format('truetype'),
-         url('raleway-fonts/raleway-light-webfont.svg#ralewaylight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+nav {
+  width: 450px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  padding-right: 5%;
 }
 
-
-
-
-@font-face { /* ralewaymedium */
-    font-family: 'ralewaymedium';
-    src: url('raleway-fonts/raleway-medium-webfont.eot');
-    src: url('raleway-fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway-fonts/raleway-medium-webfont.woff2') format('woff2'),
-         url('raleway-fonts/raleway-medium-webfont.woff') format('woff'),
-         url('raleway-fonts/raleway-medium-webfont.ttf') format('truetype'),
-         url('raleway-fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+a {
+  display: flex;
+  color: #000000;
+  text-decoration: none;
 }
 
-
-
-
-@font-face { /* ralewaysemibold */
-    font-family: 'ralewaysemibold';
-    src: url('raleway-fonts/raleway-semibold-webfont.eot');
-    src: url('raleway-fonts/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway-fonts/raleway-semibold-webfont.woff2') format('woff2'),
-         url('raleway-fonts/raleway-semibold-webfont.woff') format('woff'),
-         url('raleway-fonts/raleway-semibold-webfont.ttf') format('truetype'),
-         url('raleway-fonts/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+a:hover /* Comment mettre la barre bleue au dessus du lien en hover */ {
+  display: block;
+  color: #0065ff;
+  border-top: #0065ff;
 }
 
-/* Les Icones s'affichent en position initiale lors du chargement de la page !!!!! */
-
-header
-{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    margin-top: 2%;
+.Inscription {
+  font-weight: bold;
+  color: #0065ff;
 }
 
-body
-{   
-    padding: 5px 20px 5px 50px;
+.trouvez {
+  font-weight: bolder;
+  font-size: 25px;
 }
 
-    nav
-    {
-        font-family: 'ralewaymedium', 'Times New Roman', Times, serif;
-        width: 450px;
-        display: flex;
-        align-items: top;
-        justify-content: space-between;
-        padding-right: 5%;
-    }
-
-        a
-        {
-            display: flex;
-            color: #000000;
-            text-decoration: none;
-
-        }
-
-        a:hover /* Comment mettre la barre bleue au dessus du lien en hover */
-        {
-            display: block;
-            color: #0065ff;
-            border-top: #0065ff;
-        }
-
-        .Inscription
-        {
-            font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
-            color: #0065ff;
-        }
-    
-    .trouvez
-    {
-        font-family: 'ralewaybold', 'Times New Roman', Times, serif;
-        font-size: 25px;
-    }  
-
-    .enPlein
-    {
-        font-family: 'ralewaylight', 'Times New Roman', Times, serif;
-        font-size: 18px;
-    }
-
-    #barreRecherche /* Aligner icone-textbox-button au niveau des border */
-    {
-        display:flex;
-        align-items: center;
-        justify-content: start;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        width: 30%;
-    }
-        .fa-map-marker-alt
-        {
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            width: 10%;
-            height: 48px;
-            background-color: #f2f2f2;
-            border-radius: 35% 0% 0% 35%;
-        }
-
-        input /* Trouver comment afficher le background en blanc sur Firefox (background en gris) */
-        {
-            font-family: 'ralewaybold', 'Times New Roman', Times, serif;
-            font-size: 1em;
-            height: 43px;
-            border: none;
-            border-top: 3px solid #f2f2f2;
-            border-bottom: 3px solid #f2f2f2;
-        }
-
-        input::placeholder
-        {
-            color: #000000;
-            opacity: 1;
-        }
-
-        #recherche
-        {
-            font-family: 'ralewaysemibold', 'Times New Roman', Times, serif;
-            font-size: 1.2em;
-            border-radius: 0% 15% 15% 0%;
-            background-color: #0065ff;
-            color: #ffffff;
-            width: 150px;
-            height: 50px;
-            border: none;
-        }
-
-        .fa-search
-        {
-            display: none;
-        }
-
-    
-    #filtres
-    {
-        font-family: 'ralewaybold', 'Times New Roman', Times, serif;
-        max-width:  1025px;
-        max-height: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2em 1em 3em 1em;
-    }
-
-        button
-        {
-            font-family: 'ralewaybold', 'Times New Roman', Times, serif;
-            font-size: 1em;
-            background-color: #ffffff;
-            box-shadow: none;
-            border: 5px solid #f2f2f2;
-            border-radius: 50% 50% 50% 50%;
-            width: 150px;
-            height: 60px;
-        }
-        
-        button:hover
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color:#0065ff;
-            background-color: #deebff;
-        }
-
-            .eco
-            {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-                .fa-money-bill-wave
-                {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50% 50% 50% 50%;
-                    background-color: #DEEBFF;
-                    color: #0065ff;
-                    
-                }
-        
-            .romantique:nth-child(2)
-            {
-                order: 3;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-                .fa-child
-                {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50% 50% 50% 50%;
-                    background-color: #DEEBFF;
-                    color: #0065ff;
-                }
-
-            .animal:nth-child(3)
-            {
-                order: 4;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-                .fa-dog
-                {   
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50% 50% 50% 50%;
-                    background-color: #DEEBFF;
-                    color: #0065ff;
-                }
-
-            .famille:nth-child(4)
-            {
-                order: 2;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-                .fa-heart
-                {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 50% 50% 50% 50%;
-                    background-color: #DEEBFF;
-                    color: #0065ff;
-                }
-    
-    .fa-solid
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #0065ff;
-        border: 2px solid #f2f2f2;
-        border-radius: 50% 50% 50% 50%;
-        width: 25px;
-        height: 25px;
-        margin-right: 10px;
-    }
-
-    .information
-    {
-        font-family: 'ralewaylight';
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-
-    }
-
-
-    .populaires
-    {
-        display: block;
-        justify-content: end;
-
-    }
-
-        h3
-        {
-
-        }
-
-        .hotel
-        {
-
-        } 
-
-    
-
-    .hebergement
-    {
-
-    }
-
-        .heberge 
-        {
-
-        }
-    
-        .fa-star
-        {
-
-        }
-    
-    .afficher
-    {
-
-    }
-
-    .activités
-    {
-
-    }
-
-footer
-{
-    font-family: 'ralewaylight', 'Times New Roman', Times, serif;
-    display: flex;
-    justify-content: space-between;
-    margin-left: none;
-    width: 80%;
-    background-color: #f2f2f2;
+.enPlein {
+  font-size: 18px;
 }
 
-    h4
-    {
-        font-family:'ralewaybold', 'Times New Roman', Times, serif;
-    }
+#searchField {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
 
+.markerIcon {
+  border-radius: 16px 0 0 16px;
+  background-color: #f2f2f2;
+  width: 10%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+input {
+  border: none;
+  width: 50%;
+  height: 46px;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
 
+input::placeholder {
+  margin-right: auto;
+  font-size: large;
+  font-weight: 650;
+  color: #000000;
+}
 
+#searchButton {
+  border-radius: 0 16px 16px 0;
+  border: none;
+  width: 30%;
+  height: 49px;
+  background-color: #0065ff;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+}
 
+.magnifyGlass {
+  border-radius: 16px 16px 16px 16px;
+  background-color: #0065ff;
+  color: white;
+  width: 15%;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 
+#filtersBlock {
+  display: flex;
+}
 
+li {
+  border: 2px solid #f2f2f2;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+}
 
+.filterIcon {
+}
 
+.fa-solid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065ff;
+  border: 2px solid #f2f2f2;
+  border-radius: 50% 50% 50% 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
 
+.information {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.populaires {
+  display: block;
+  justify-content: end;
+}
+
+h3 {
+}
+
+.hotel {
+}
+
+.hebergement {
+}
+
+.heberge {
+}
+
+.fa-star {
+}
+
+.afficher {
+}
+
+.activités {
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: none;
+  width: 80%;
+  background-color: #f2f2f2;
+}
+
+h4 {
+}
