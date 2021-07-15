@@ -18,8 +18,11 @@ nav {
 }
 
 #logoReservia {
-  display: flex;
-  align-items: flex-start;
+  width: 30%;
+}
+
+#logoReservia img {
+  width: 200px;
 }
 
 a {
@@ -76,7 +79,7 @@ input {
 }
 
 input::placeholder {
-  margin-right: auto;
+  padding-left: 10px;
   font-size: large;
   font-weight: 650;
   color: #000000;
@@ -143,10 +146,7 @@ li:hover {
   justify-content: center;
 }
 
-.filterIcon:hover {
-}
-
-.fa-solid {
+#infoIcon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,36 +158,104 @@ li:hover {
   margin-right: 10px;
 }
 
-.information {
+.infoLine {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-.populaires {
-  display: block;
-  justify-content: end;
+.emptyLink:hover {
+  border: none;
+  color: #000000;
+}
+
+.cardImage img {
+  width: 210px;
+  height: 110px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+
+main {
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+}
+
+#homeSection {
+  border-radius: 20px;
+  width: 68%;
+  height: 650px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
+  padding-left: 40px;
 }
 
-.hotel {
+#cardBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.hebergement {
+.hotelCard {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
 }
 
-.heberge {
+.hotelCard:hover {
+  border: none;
+  color: black;
 }
 
-.fa-star {
+.cardImage img {
+  padding: 5px;
 }
 
-.afficher {
+.hotelInfo {
+  width: 100%;
+  margin: 0px 0px 0px 20px;
 }
 
-.activités {
+.hotelName {
+  font-weight: 700;
+  margin: 0px 0px 5px 0px;
+}
+
+.priceInfo {
+  margin: 0px 0px 5px 0px;
+}
+
+.starRating {
+  color: #0065ff;
+  margin-bottom: 5px;
+}
+
+.greyStar {
+  color: lightgray;
+}
+
+#extendLink {
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 30px;
+  padding-left: 40px;
+}
+
+#popularSection {
+  width: auto;
+  height: auto;
+}
+
+section {
 }
 
 footer {
