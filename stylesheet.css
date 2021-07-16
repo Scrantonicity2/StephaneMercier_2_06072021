@@ -131,6 +131,7 @@ li {
   border-radius: 100px;
   font-size: 20px;
   padding-right: 25px;
+  margin-right: 10px;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -172,26 +173,26 @@ li:hover {
   flex-direction: row;
 }
 
-.cardImage img {
-  width: 210px;
-  height: 110px;
-  border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
-}
-
 main {
   height: 700px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 580px) {
+  main {
+    flex-direction: column;
+  }
 }
 
 #homeSection {
   border-radius: 20px;
-  width: 68%;
+  width: 100%;
   height: auto;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
+  margin: 0px 20px 40px 10px;
 }
 
 h3 {
@@ -209,6 +210,7 @@ h3 {
 .hotelCard {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 20px;
   background-color: white;
   border-radius: 20px 20px 20px 20px;
@@ -220,6 +222,10 @@ h3 {
 }
 
 .cardImage img {
+  width: 210px;
+  height: 110px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
   padding: 5px;
 }
 
@@ -254,8 +260,51 @@ h3 {
 }
 
 #popularSection {
-  width: auto;
+  max-width: 100%;
   height: auto;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+#popularBlock {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.popularCard {
+  margin: 20px;
+  height: 150px;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.popularCard img {
+  width: 120px;
+  height: 140px;
+  border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
+  padding: 5px;
+}
+
+#popularBlock :hover {
+  border: none;
+  color: black;
+}
+
+.popularInfo {
+  padding-left: 10px;
+}
+
+.popularName {
+  font-weight: 700;
+}
+
+.popularPrice {
+  padding-bottom: 20px;
 }
 
 section {
@@ -265,7 +314,7 @@ footer {
   display: flex;
   justify-content: space-between;
   margin-left: none;
-  width: 80%;
+  width: 100%;
   background-color: #f2f2f2;
 }
 
