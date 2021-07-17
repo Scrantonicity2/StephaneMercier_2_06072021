@@ -7,42 +7,39 @@ body {
   box-sizing: border-box;
 }
 
-#menuNav {
-  display: flex;
-  align-items: flex-end;
-}
-
 .titleNav {
   width: 100%;
-  height: 3rem;
+  height: 80px;
+  margin-left: 0px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
 }
 
 .menuPart {
-  width: 100%;
+  width: 50%;
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  justify-content: left;
 }
 
 nav {
-  width: 100%;
+  width: 50%;
   display: flex;
-  align-items: flex-end;
+  flex-direction: row;
 }
 
-#logoReservia {
-  width: 70px;
-  height: 70px;
-  margin-left: 50px;
+.partLink {
+  width: 70%;
+  height: 40px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
-#logoReservia img {
-  width: auto;
-  height: 50px;
-  margin-top: 40px;
+.partSub {
+  width: 30%;
+  height: 40px;
   display: flex;
-  justify-content: flex-start;
 }
 
 a {
@@ -57,22 +54,21 @@ a:hover {
   border-top: 2px solid #0065ff;
 }
 
-.Inscription {
-  width: 70px;
+.subscribeOption {
+  width: 70%;
   height: 80px;
-  margin-right: 55px;
   font-weight: bold;
   color: #0065ff;
   display: flex;
   justify-content: flex-end;
 }
 
-.trouvez {
+.title {
   font-weight: bolder;
   font-size: 25px;
 }
 
-.enPlein {
+.subTitle {
   font-size: 20px;
 }
 
@@ -131,7 +127,7 @@ input::placeholder {
   display: none;
 }
 
-h2 {
+@media only screen and (max-width) h2 {
   margin-right: 20px;
 }
 
@@ -353,16 +349,7 @@ h3 {
   padding-bottom: 20px;
 }
 
-#activityMarseille {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-#activityMarseille :hover {
+#activityBlock :hover {
   border: none;
   color: black;
 }
@@ -373,6 +360,14 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 620px) {
+  #activityBlock {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #firstCard {
@@ -508,12 +503,32 @@ h3 {
   font-weight: bolder;
   padding-left: 10px;
 }
+
 footer {
+  max-width: 100%;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: left;
   background-color: #f2f2f2;
 }
 
-h4 {
+@media only screen and (max-width: 620px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#aboutSection {
+  width: 30%;
+  margin-left: 20px;
+}
+
+#housingSection {
+  width: 30%;
+  margin-left: 80px;
+}
+
+#assistSection {
+  width: 30%;
 }

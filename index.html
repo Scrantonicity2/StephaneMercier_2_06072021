@@ -18,27 +18,23 @@
     />
   </head>
   <body>
-    <div id="menuNav">
-      <div class="titleNav">
-        <div class="menuPart">
-          <div id="logoReservia">
-            <img src="images/logo/Reservia.svg" alt="Logo RESERVIA" />
-          </div>
-        </div>
-        <div class="menuPart">
-          <nav>
-            <a href="#ancreHeberge">Hébergements</a>
-            <a href="#ancreActivite">Activités</a>
-          </nav>
-        </div>
-        <div class="menuPart">
-          <div class="Inscription">S'inscrire</div>
-        </div>
+    <div class="titleNav">
+      <div class="menuPart">
+        <img src="images/logo/Reservia.svg" alt="Logo RESERVIA" />
       </div>
+      <nav>
+        <div class="partLink">
+          <a href="#ancreHeberge">Hébergements</a>
+          <a href="#ancreActivite">Activités</a>
+        </div>
+        <div class="partSub">
+          <p class="subscribeOption">S'inscrire</p>
+        </div>
+      </nav>
     </div>
 
-    <p class="trouvez">Trouvez votre hébergement pour des vacances de rêve</p>
-    <p class="enPlein">En plein centre ville ou en pleine nature</p>
+    <p class="title">Trouvez votre hébergement pour des vacances de rêve</p>
+    <p class="subTitle">En plein centre ville ou en pleine nature</p>
 
     <section id="searchField">
       <span class="markerIcon">
@@ -257,83 +253,82 @@
     </main>
 
     <h3 id="ancreActivite">Activités à Marseille</h3>
-    <section id="activityMarseille">
-      <div id="activityBlock">
-        <div id="firstCard">
-          <a class="portPic" href="#">
+
+    <div id="activityBlock">
+      <div id="firstCard">
+        <a class="portPic" href="#">
+          <img
+            src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            alt="Vieux Port"
+          />
+          <p class="picCaption">Vieux-Port</p>
+        </a>
+      </div>
+      <div id="blockOne">
+        <div id="secondCard">
+          <a class="fortPic" href="#">
             <img
-              src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-              alt="Vieux Port"
+              src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              alt="Fort de Pomègues"
             />
-            <p class="picCaption">Vieux-Port</p>
+            <p class="picCaption">Fort de Pomègues</p>
           </a>
         </div>
-        <div id="blockOne">
-          <div id="secondCard">
-            <a class="fortPic" href="#">
-              <img
-                src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                alt="Fort de Pomègues"
-              />
-              <p class="picCaption">Fort de Pomègues</p>
-            </a>
-          </div>
-          <div id="thirdCard">
-            <a class="frioulPic" href="#">
-              <img
-                src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                alt="Îles du Frioul"
-              />
-              <p class="picCaption">Îles du Frioul</p>
-            </a>
-          </div>
-        </div>
-        <div id="fourthCard">
-          <a class="calanquesPic" href="#">
+        <div id="thirdCard">
+          <a class="frioulPic" href="#">
             <img
-              src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-              alt="Parc National des Calanques"
+              src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+              alt="Îles du Frioul"
             />
-            <p class="picCaption">Parc National des Calanques</p>
+            <p class="picCaption">Îles du Frioul</p>
           </a>
-        </div>
-        <div id="blockTwo">
-          <div id="fifthCard">
-            <a class="notredamePic" href="#">
-              <img
-                src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                alt="Notre Dame de la Garde"
-              />
-              <p class="picCaption">Notre-Dame-de-la-Garde</p>
-            </a>
-          </div>
-          <div id="sixthCard">
-            <a class="parcPic" href="#">
-              <img
-                src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                alt="Parc Longchamp"
-              />
-              <p class="picCaption">Parc Longchamp</p>
-            </a>
-          </div>
         </div>
       </div>
-    </section>
+      <div id="fourthCard">
+        <a class="calanquesPic" href="#">
+          <img
+            src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            alt="Parc National des Calanques"
+          />
+          <p class="picCaption">Parc National des Calanques</p>
+        </a>
+      </div>
+      <div id="blockTwo">
+        <div id="fifthCard">
+          <a class="notredamePic" href="#">
+            <img
+              src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              alt="Notre Dame de la Garde"
+            />
+            <p class="picCaption">Notre-Dame-de-la-Garde</p>
+          </a>
+        </div>
+        <div id="sixthCard">
+          <a class="parcPic" href="#">
+            <img
+              src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+              alt="Parc Longchamp"
+            />
+            <p class="picCaption">Parc Longchamp</p>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 
   <footer>
-    <section>
+    <section id="aboutSection">
       <h4>A propos</h4>
       <p>Fonctionnement du site</p>
       <p>Conditions Générales de vente</p>
       <p>Données et confidentialités</p>
     </section>
-    <section>
+    <section id="housingSection">
       <h4>Nos hébergements</h4>
       <p>Charte qualité</p>
       <p>Soumettre votre hôtel</p>
     </section>
-    <section>
+    <section id="assistSection">
       <h4>Assistance</h4>
       <p>Centre d'aide</p>
       <p>Nous contacter</p>
