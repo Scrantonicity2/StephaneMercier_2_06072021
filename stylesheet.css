@@ -1,6 +1,15 @@
 body {
   font-family: "Raleway", sans-serif;
-  padding: 5px 20px 5px 50px;
+  padding: 5px 20px 5px 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#menuNav {
+  display: flex;
+  align-items: flex-end;
 }
 
 .titleNav {
@@ -8,30 +17,37 @@ body {
   height: 3rem;
   display: flex;
   justify-content: flex-end;
-  height: 100px;
+}
+
+.menuPart {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 #logoReservia {
-  width: 100%;
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+}
+
+#logoReservia img {
+  width: auto;
+  height: 50px;
+  margin-top: 40px;
   display: flex;
   justify-content: flex-start;
 }
 
-nav {
-  width: 450px;
-  display: flex;
-  align-items: top;
-  justify-content: space-between;
-  padding-right: 10px;
-}
-
-#logoReservia img {
-  width: 200px;
-}
-
 a {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   color: #000000;
   text-decoration: none;
 }
@@ -42,10 +58,13 @@ a:hover {
 }
 
 .Inscription {
-  display: flex;
-  align-items: center;
+  width: 70px;
+  height: 80px;
+  margin-right: 55px;
   font-weight: bold;
   color: #0065ff;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .trouvez {
@@ -54,7 +73,7 @@ a:hover {
 }
 
 .enPlein {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #searchField {
@@ -126,6 +145,13 @@ h2 {
   flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 580px) {
+  #filtersBlock {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 li {
   border: 3px solid #f2f2f2;
   border-radius: 100px;
@@ -186,21 +212,28 @@ main {
 }
 
 #homeSection {
-  border-radius: 20px;
   width: 100%;
   height: auto;
   background-color: #f2f2f2;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   margin: 0px 20px 40px 10px;
 }
 
+@media only screen and (max-width: 580px) {
+  #homeSection {
+    background-color: white;
+  }
+}
+
 h3 {
-  padding-left: 40px;
+  padding-left: 20px;
 }
 
 #cardBlock {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -208,6 +241,7 @@ h3 {
 }
 
 .hotelCard {
+  width: 23%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -216,22 +250,34 @@ h3 {
   border-radius: 20px 20px 20px 20px;
 }
 
+@media only screen and (max-width: 580px) {
+  .hotelCard {
+    width: 100%;
+  }
+}
+
 .hotelCard:hover {
   border: none;
   color: black;
 }
 
 .cardImage img {
-  width: 210px;
+  width: 235px;
   height: 110px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
   padding: 5px;
 }
 
+@media only screen and (max-width: 580px) {
+  .cardImage img {
+    width: 100%;
+  }
+}
+
 .hotelInfo {
   width: 100%;
-  margin: 0px 0px 0px 20px;
+  padding-left: 10px;
 }
 
 .hotelName {
@@ -284,7 +330,7 @@ h3 {
 
 .popularCard img {
   width: 120px;
-  height: 140px;
+  height: 150px;
   border-radius: 20px 0px 0px 20px;
   object-fit: cover;
   padding: 5px;
@@ -307,13 +353,164 @@ h3 {
   padding-bottom: 20px;
 }
 
-section {
+#activityMarseille {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
+#activityMarseille :hover {
+  border: none;
+  color: black;
+}
+
+#activityBlock {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#firstCard {
+  width: 23%;
+  box-shadow: 1px 1px 12px #f2f2f2;
+  border-radius: 20px;
+}
+
+.portPic {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.portPic img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#blockOne {
+  width: 23%;
+  height: auto;
+}
+
+#secondCard {
+  width: 100%;
+  height: 220px;
+  box-shadow: 1px 1px 12px #f2f2f2;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.fortPic {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.fortPic img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#thirdCard {
+  width: 100%;
+  height: 163px;
+  box-shadow: 1px 1px 12px #f2f2f2;
+  border-radius: 20px;
+}
+
+.frioulPic {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.frioulPic img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#fourthCard {
+  width: 23%;
+  box-shadow: 1px 1px 12px #f2f2f2;
+  border-radius: 20px;
+}
+
+.calanquesPic {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.calanquesPic img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#blockTwo {
+  width: 23%;
+  height: auto;
+}
+
+#fifthCard {
+  width: 100%;
+  height: 180px;
+  box-shadow: 1px 12px 12px #f2f2f2;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.notredamePic {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.notredamePic img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+#sixthCard {
+  width: 100%;
+  height: 202px;
+  box-shadow: 1px 1px 12px #f2f2f2;
+  border-radius: 20px;
+}
+
+.parcPic {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.parcPic img {
+  width: 100%;
+  height: 153px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.picCaption {
+  font-weight: bolder;
+  padding-left: 10px;
+}
 footer {
   display: flex;
   justify-content: space-between;
-  margin-left: none;
   width: 100%;
   background-color: #f2f2f2;
 }
