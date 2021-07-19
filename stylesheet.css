@@ -122,7 +122,7 @@ input {
 input::placeholder {
   padding-left: 10px;
   font-size: large;
-  font-weight: 650;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -137,16 +137,27 @@ input::placeholder {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 768px) {
+  #searchButton {
+    display: none;
+  }
+}
+
 .magnifyGlass {
-  border-radius: 16px 16px 16px 16px;
-  background-color: #0065ff;
-  color: white;
-  width: 15%;
-  height: 49px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .magnifyGlass {
+    border-radius: 0px 16px 16px 0px;
+    background-color: #0065ff;
+    color: white;
+    width: 15%;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .filtersLine {
@@ -262,7 +273,6 @@ h3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* justify-content: space-evenly; */
   margin-left: 10px;
 }
 
@@ -283,9 +293,9 @@ h3 {
   border-radius: 20px 20px 20px 20px;
 }
 
-@media only screen and (max-width: 768 px) {
+@media only screen and (max-width: 768px) {
   .hotelCard {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -355,7 +365,7 @@ h3 {
   margin-bottom: 40px;
 }
 
-@media screen only and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #popularBlock {
     width: 100%;
     height: auto;
