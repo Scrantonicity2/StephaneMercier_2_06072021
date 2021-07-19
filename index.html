@@ -18,24 +18,32 @@
     />
   </head>
   <body>
+    <!--Bloc Header (Logo, menu navigation, onglet "s'inscrire")-->
     <div class="titleNav">
+      <!--Bloc LOGO RESERVIA-->
       <div class="menuPart">
         <img src="images/logo/Reservia.svg" alt="Logo RESERVIA" />
       </div>
+
+      <!--Bloc Menu Navigation et onglet "s'inscrire"-->
       <nav>
+        <!--Menu navigation-->
         <div class="partLink">
           <a href="#ancreHeberge">Hébergements</a>
           <a href="#ancreActivite">Activités</a>
         </div>
+        <!--Onglet "s'inscrire"-->
         <div class="partSub">
           <p class="subscribeOption">S'inscrire</p>
         </div>
       </nav>
     </div>
 
+    <!--Phrases Intro-->
     <p class="title">Trouvez votre hébergement pour des vacances de rêve</p>
     <p class="subTitle">En plein centre ville ou en pleine nature</p>
 
+    <!--Champ de Recherche-->
     <div id="searchField">
       <span class="markerIcon">
         <i class="fas fa-map-marker-alt"></i>
@@ -52,6 +60,8 @@
         <i class="searchIcon fas fa-search"></i>
       </span>
     </div>
+
+    <!--Section des Filtres de recherche-->
     <div class="filtersLine">
       <h2>Filtres</h2>
       <ul id="filtersBlock">
@@ -82,6 +92,7 @@
       </ul>
     </div>
 
+    <!-- Phrase d'information "plus de 500 logements.."-->
     <p class="infoLine">
       <span id="infoIcon">
         <i class="fas fa-solid fa-info"></i>
@@ -90,10 +101,13 @@
     </p>
 
     <main>
+      <!--Bloc "Hebergements à Marseille", "les plus populaires" et "Activités à Marseille"-->
       <div class="activityHomes">
+        <!--Bloc "Hebergements à Marseille" et "Les plus populaires"-->
         <div class="hotpopBlock">
+          <!--Bloc "les plus populaires"-->
           <section id="popularSection">
-            <h3>
+            <h3 class="popularTitle">
               Les plus populaires <span><i class="fas fa-chart-line"></i></span>
             </h3>
             <div id="popularBlock">
@@ -151,6 +165,7 @@
             </div>
           </section>
 
+          <!-- Hebergements à Marseille-->
           <section id="homeSection">
             <h3 id="ancreHeberge">Hébergements à Marseille</h3>
             <div id="cardBlock">
@@ -263,8 +278,10 @@
         </div>
       </div>
 
+      <!--Titre des Activités-->
       <h3 id="ancreActivite">Activités à Marseille</h3>
 
+      <!--Bloc Acxtivités-->
       <div id="activityBlock">
         <div id="firstCard">
           <a class="portPic" href="#">
@@ -327,6 +344,7 @@
       </div>
     </main>
 
+    <!--Footer-->
     <footer>
       <section id="aboutSection">
         <h4>A propos</h4>
