@@ -4,7 +4,8 @@ body {
   margin: 0px;
 }
 
-. allBlocks {
+* {
+  list-style-type: none;
 }
 
 .headerBlock {
@@ -41,7 +42,6 @@ nav {
 }
 
 .navMenu {
-  list-style-type: none;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -111,7 +111,8 @@ nav {
 
 .inputField {
   width: 60%;
-  border: 3px solid #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-right: none;
   display: flex;
 }
 
@@ -124,6 +125,7 @@ input {
 
 input::placeholder {
   color: black;
+  font-family: "Raleway", "Times New Roman", Times, serif;
 }
 
 button {
@@ -139,6 +141,82 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+.filtersBlock {
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.filtersList {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 60px;
+}
+
+.filter {
+  width: fit-content;
+  height: 35px;
+  font-weight: bold;
+  font-size: large;
+  border: 3px solid #f2f2f2;
+  border-left: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 10px 10px;
+  padding-right: 20px;
+}
+
+.filterIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #deebff;
+  color: #0065ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.infoLine {
+  font-size: larger;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.infoIcon {
+  width: 30px;
+  height: 30px;
+  color: #0065ff;
+  border: 1px solid #f2f2f2;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+main {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.popularBlock {
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  background-color: #f2f2f2;
+}
+
+
 
 /* TABLETTES */
 @media only screen and (min-width: 425px) and (max-width: 1024px) {
@@ -176,6 +254,7 @@ button {
     display: flex;
     justify-content: center;
     order: 2;
+    margin-right: 10px;
   }
 
   .searchBlock {
@@ -227,7 +306,7 @@ button {
   .anchorActivités {
     border: none;
     padding: 0px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
 
   .signIn {
@@ -235,6 +314,7 @@ button {
     display: flex;
     justify-content: center;
     order: 2;
+    margin-right: 50px;
   }
 
   .introOne {
@@ -259,5 +339,26 @@ button {
 
   .searchIcon {
     display: none;
+  }
+
+  .filtersTitle {
+    margin-right: 20px;
+  }
+
+  .filtersBlock {
+    align-items: flex-end;
+  }
+
+  .filter {
+    margin-right: 20px;
+  }
+
+  .filtersList :hover {
+    background-color: #deebff;
+    color: #0065ff;
+  }
+
+  .infoLine {
+    font-size: medium;
   }
 }
