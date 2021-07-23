@@ -230,6 +230,8 @@ h2 {
 }
 
 .popularCard {
+  text-decoration: none;
+  color: black;
   display: flex;
   background-color: white;
   box-shadow: 0px 0px 10px lightgray;
@@ -282,6 +284,8 @@ h2 {
 }
 
 .housingCard {
+  text-decoration: none;
+  color: black;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -514,6 +518,10 @@ h2 {
 
   .housingCard {
     width: 30%;
+  }
+
+  .housingFittingImage {
+    height: 100px;
   }
 
   .clickableCard {
