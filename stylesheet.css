@@ -326,7 +326,129 @@ h2 {
   padding-bottom: 20px;
 }
 
-/* TABLETTES */
+#activityBlock {
+  padding: 10px 0px 0px 0px;
+}
+
+.activityOptions {
+  margin: 10px 0px 0px 20px;
+}
+
+.vieuxPortCard {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 20px;
+  margin: 20px 20px 20px 0px;
+}
+
+.vieuxPortPic {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.pomèguesCard {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 20px;
+  margin: 20px 20px 20px 0px;
+}
+
+.pomèguesPic {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.frioulCard {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 20px;
+  margin: 20px 20px 20px 0px;
+}
+
+.frioulPic {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.calanquesCard {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 20px;
+  margin: 20px 20px 20px 0px;
+}
+
+.calanquesPic {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.notreDameCard {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 20px;
+  margin: 20px 20px 20px 0px;
+}
+
+.notreDamePic {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.longchampCard {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 20px;
+  margin: 20px 20px 20px 0px;
+}
+
+.longchampPic {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.cardName {
+  font-weight: bold;
+  font-size: large;
+  padding-left: 10px;
+}
+
+/* iPad */
 @media only screen and (min-width: 425px) and (max-width: 1024px) {
   .headerBlock {
     margin: 0px;
@@ -495,9 +617,6 @@ h2 {
     border-radius: 20px;
   }
 
-  .popularOptions {
-  }
-
   .popularCard {
     margin-bottom: 30px;
   }
@@ -517,7 +636,7 @@ h2 {
   }
 
   .housingCard {
-    width: 30%;
+    width: 31%;
   }
 
   .housingFittingImage {
@@ -544,5 +663,69 @@ h2 {
 
   .starRating {
     margin-bottom: 0px;
+  }
+
+  #activityBlock {
+    width: 100%;
+  }
+
+  .activityOptions {
+    display: flex;
+  }
+
+  .vieuxPortCard {
+    width: 25%;
+  }
+
+  .vieuxPortPic {
+    height: 405px;
+  }
+
+  .cardColumnOne {
+    width: 25%;
+  }
+
+  .pomèguesCard {
+    /* height: 52%; */
+    margin-bottom: 40px;
+  }
+
+  .pomèguesPic {
+    height: 200px;
+  }
+
+  .frioulCard {
+    /* height: 158px; */
+  }
+
+  .frioulPic {
+    height: 110px;
+  }
+
+  .calanquesCard {
+    width: 25%;
+  }
+
+  .calanquesPic {
+    height: 405px;
+  }
+
+  .cardColumnTwo {
+    width: 25%;
+  }
+
+  .notreDameCard {
+    margin-bottom: 40px;
+  }
+
+  .notreDamePic {
+    height: 130px;
+  }
+
+  /* .longchampCard {
+  } */
+
+  .longchampPic {
+    height: 180px;
   }
 }
