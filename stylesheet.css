@@ -1,11 +1,16 @@
 body {
   font-family: "Raleway", sans-serif;
-  padding: 0px;
   margin: 0px;
 }
 
-* {
+a {
+  text-decoration: none;
   list-style-type: none;
+  color: black;
+}
+
+.allBlocks {
+  margin: 0px;
 }
 
 .headerBlock {
@@ -448,6 +453,16 @@ h2 {
   padding-left: 10px;
 }
 
+footer {
+  background-color: #f2f2f2;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
 /* iPad */
 @media only screen and (min-width: 425px) and (max-width: 1024px) {
   .headerBlock {
@@ -519,6 +534,84 @@ h2 {
   .popularInfo {
     margin-left: 30px;
   }
+
+  .housingOptions {
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .housingCard {
+    width: 45%;
+  }
+
+  .activityOptions {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .vieuxPortCard {
+    width: 25%;
+    height: 200px;
+  }
+
+  .vieuxPortPic {
+    height: 180px;
+  }
+
+  .cardColumnOne {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pomèguesCard {
+    width: 50%;
+    height: 200px;
+  }
+
+  .pomèguesPic {
+    height: 145px;
+  }
+
+  .frioulCard {
+    width: 50%;
+    height: 200px;
+  }
+
+  .calanquesCard {
+    width: 25%;
+    height: 200px;
+  }
+
+  .calanquesPic {
+    height: 180px;
+  }
+
+  .cardColumnTwo {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .notreDameCard {
+    width: 45%;
+    height: 200px;
+  }
+
+  .notreDamePic {
+    height: 125px;
+  }
+
+  .longchampCard {
+    width: 45%;
+    height: 200px;
+  }
+
+  .longchampPic {
+    height: 125px;
+  }
 }
 
 /* Desktop */
@@ -549,7 +642,7 @@ h2 {
   .anchorActivités {
     border: none;
     padding: 0px;
-    /* margin-left: 30px; */
+    margin-left: 30px;
   }
 
   .signIn {
@@ -686,16 +779,11 @@ h2 {
   }
 
   .pomèguesCard {
-    /* height: 52%; */
     margin-bottom: 40px;
   }
 
   .pomèguesPic {
     height: 200px;
-  }
-
-  .frioulCard {
-    /* height: 158px; */
   }
 
   .frioulPic {
@@ -722,10 +810,15 @@ h2 {
     height: 130px;
   }
 
-  /* .longchampCard {
-  } */
-
   .longchampPic {
     height: 180px;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .footerSection {
+    margin: 0px 250px 0px 20px;
   }
 }
