@@ -5,8 +5,6 @@ body {
 
 a {
   text-decoration: none;
-  list-style-type: none;
-  color: black;
 }
 
 .allBlocks {
@@ -160,7 +158,6 @@ button {
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 60px;
 }
 
 .filter {
@@ -464,7 +461,7 @@ footer {
 }
 
 /* iPad */
-@media only screen and (min-width: 425px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .headerBlock {
     margin: 0px;
     display: flex;
@@ -615,7 +612,7 @@ footer {
 }
 
 /* Desktop */
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .headerBlock {
     margin: 0px;
     display: flex;
@@ -635,14 +632,34 @@ footer {
 
   .anchorHebergement {
     border-bottom: none;
-    border-top: 1px solid #0065ff;
+    /* border-top: 1px solid #0065ff; */
     padding: 30px;
+  }
+
+  .anchorHebergement:hover {
+    border-top: 1px solid #0065ff;
+  }
+
+  .hebergeLink {
+    color: black;
+  }
+
+  .hebergeLink:hover {
+    color: #0065ff;
   }
 
   .anchorActivités {
     border: none;
     padding: 0px;
     margin-left: 30px;
+  }
+
+  .anchorActivités:hover {
+    border-top: 1px solid #0065ff;
+  }
+
+  .activLink:hover {
+    color: #0065ff;
   }
 
   .signIn {
@@ -677,12 +694,8 @@ footer {
     display: none;
   }
 
-  .filtersTitle {
-    margin-right: 20px;
-  }
-
   .filtersBlock {
-    align-items: flex-end;
+    align-items: baseline;
   }
 
   .filter {
@@ -714,6 +727,10 @@ footer {
     margin-bottom: 30px;
   }
 
+  .popularCard:hover {
+    transform: scale(1.05);
+  }
+
   #housingBlock {
     width: 70%;
     background-color: #f2f2f2;
@@ -730,6 +747,10 @@ footer {
 
   .housingCard {
     width: 31%;
+  }
+
+  .housingCard:hover {
+    transform: scale(1.05);
   }
 
   .housingFittingImage {
@@ -820,5 +841,13 @@ footer {
 
   .footerSection {
     margin: 0px 250px 0px 20px;
+  }
+
+  .footerSection a {
+    color: black;
+  }
+
+  .footerSection a:hover {
+    color: #0065ff;
   }
 }
