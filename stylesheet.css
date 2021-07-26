@@ -462,7 +462,7 @@ footer {
 }
 
 /* iPad */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .headerBlock {
     margin: 0px;
     display: flex;
@@ -612,6 +612,210 @@ footer {
   }
 }
 
+/* iPad Landscape and iPad Pro*/
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .headerBlock {
+    margin: 0px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .siteLogo {
+    width: 70%;
+  }
+
+  nav {
+    width: 40%;
+    display: flex;
+    order: 1;
+    margin: 0px;
+  }
+
+  .anchorHebergement {
+    border-bottom: none;
+    border-top: 1px solid #0065ff;
+    padding: 30px;
+  }
+
+  .anchorActivités {
+    border: none;
+    padding: 0px;
+    margin-left: 30px;
+  }
+
+  .signIn {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    order: 2;
+    margin-right: 50px;
+  }
+
+  .introOne {
+    font-size: x-large;
+  }
+
+  .searchBlock {
+    width: 35%;
+  }
+
+  button {
+    width: 30%;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    background-color: #0065ff;
+    color: white;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .searchIcon {
+    display: none;
+  }
+
+  .filtersBlock {
+    align-items: baseline;
+  }
+
+  .filter {
+    margin-right: 20px;
+  }
+
+  .infoLine {
+    font-size: medium;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popularBlock {
+    order: 2;
+    width: 40%;
+    margin: 0px 20px 0px 20px;
+    border-radius: 20px;
+  }
+
+  .popularCard {
+    margin-bottom: 30px;
+  }
+
+  #housingBlock {
+    width: 50%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .housingOptions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .housingCard {
+    width: 45%;
+  }
+
+  .housingFittingImage {
+    height: 100px;
+  }
+
+  .clickableCard {
+    padding: 5px;
+  }
+
+  housingInfo {
+    margin: 0px 0px 20px 10px;
+  }
+
+  .housingName {
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 5px;
+  }
+
+  .housingPrice {
+    margin-bottom: 15px;
+  }
+
+  .starRating {
+    margin-bottom: 0px;
+  }
+
+  #activityBlock {
+    width: 100%;
+  }
+
+  .activityOptions {
+    display: flex;
+  }
+
+  .vieuxPortCard {
+    width: 25%;
+  }
+
+  .vieuxPortPic {
+    height: 405px;
+  }
+
+  .cardColumnOne {
+    width: 25%;
+  }
+
+  .pomèguesCard {
+    margin-bottom: 40px;
+  }
+
+  .pomèguesPic {
+    height: 200px;
+  }
+
+  .frioulPic {
+    height: 110px;
+  }
+
+  .calanquesCard {
+    width: 25%;
+  }
+
+  .calanquesPic {
+    height: 405px;
+  }
+
+  .cardColumnTwo {
+    width: 25%;
+  }
+
+  .notreDameCard {
+    margin-bottom: 40px;
+  }
+
+  .notreDamePic {
+    height: 130px;
+  }
+
+  .longchampPic {
+    height: 180px;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  .footerSection {
+    margin: 0px 250px 0px 20px;
+  }
+
+  .footerSection a {
+    color: black;
+  }
+}
+
 /* Desktop */
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
   .headerBlock {
@@ -633,7 +837,6 @@ footer {
 
   .anchorHebergement {
     border-bottom: none;
-    /* border-top: 1px solid #0065ff; */
     padding: 30px;
   }
 
