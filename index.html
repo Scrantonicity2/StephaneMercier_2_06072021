@@ -19,12 +19,11 @@
   </head>
   <body>
     <!-- Logo and Navigation Menu-->
-
     <header class="headerBlock">
       <div class="siteLogo">
         <img src="./images/logo/Reservia.svg" alt="Logo Reservia" />
       </div>
-
+      <!-- <div class="upperRightBlock"> -->
       <div class="signIn">
         <a class="signinLink" href="#">S'inscrire</a>
       </div>
@@ -39,6 +38,7 @@
           </li>
         </ul>
       </nav>
+      <!-- </div> -->
     </header>
 
     <!-- Intro sentences-->
@@ -57,24 +57,25 @@
         <div class="markerIcon">
           <i class="fas fa-map-marker-alt"></i>
         </div>
-        <span class="inputField">
+        <div class="inputField">
           <input
             type="text"
             id="name"
             name="name"
             placeholder="Marseille, France"
             maxlength="20"
-        /></span>
-        <button>Rechercher</button>
-        <div class="searchIcon">
-          <i class="fas fa-search"></i>
+          />
+          <div class="searchIcon">
+            <i class="fas fa-search"></i>
+          </div>
         </div>
+        <button>Rechercher</button>
       </div>
     </div>
 
     <!-- Filters section -->
     <div class="filtersBlock">
-      <h3>Filtres</h3>
+      <h3 class="filterTitle">Filtres</h3>
       <ul class="filtersList">
         <li class="filter">
           <div class="filterIcon">
