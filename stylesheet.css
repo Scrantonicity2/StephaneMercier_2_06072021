@@ -110,9 +110,9 @@ nav {
 }
 
 .inputField {
-  width: 60%;
+  width: 80%;
   border: 2px solid #f2f2f2;
-  border-right: none;
+  border-radius: 0px 20px 20px 0px;
   display: flex;
 }
 
@@ -120,7 +120,7 @@ input {
   font-weight: bolder;
   font-size: large;
   border: none;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 input::placeholder {
@@ -133,7 +133,7 @@ button {
 }
 
 .searchIcon {
-  width: 15%;
+  width: 40%;
   border-radius: 20px 20px 20px 20px;
   background-color: #0065ff;
   color: white;
@@ -506,6 +506,13 @@ footer {
     width: 50%;
   }
 
+  .inputField {
+    width: 70%;
+    border: 2px solid #f2f2f2;
+    border-radius: 0px;
+    display: flex;
+  }
+
   button {
     width: 30%;
     border-radius: 0px 20px 20px 0px;
@@ -661,8 +668,15 @@ footer {
     width: 35%;
   }
 
+  .inputField {
+    width: 50%;
+    border: 2px solid #f2f2f2;
+    border-radius: 0px;
+    display: flex;
+  }
+
   button {
-    width: 30%;
+    width: 40%;
     border-radius: 0px 20px 20px 0px;
     border: none;
     background-color: #0065ff;
@@ -898,8 +912,12 @@ footer {
     width: 35%;
   }
 
+  .markerIcon {
+    width: 10%;
+  }
   .inputField {
     width: 50%;
+    border-radius: 0px;
   }
 
   button {
