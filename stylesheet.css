@@ -529,17 +529,25 @@ footer {
     display: none;
   }
 
-  .popImage {
-    width: 50%;
+  h2 {
+    margin-left: 10px;
+  }
+
+  .displayMore {
+    margin-left: 10px;
   }
 
   .imageFittingCard {
-    width: 336.4px;
+    width: 300px;
     border-radius: 20px;
   }
 
   .popularInfo {
     margin-left: 30px;
+  }
+
+  .hotelName {
+    margin-bottom: 20px;
   }
 
   .housingOptions {
@@ -559,7 +567,7 @@ footer {
   }
 
   .vieuxPortCard {
-    width: 25%;
+    width: 200px;
     height: 200px;
   }
 
@@ -568,13 +576,13 @@ footer {
   }
 
   .cardColumnOne {
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: row;
   }
 
   .pomèguesCard {
-    width: 50%;
+    width: 45%;
     height: 200px;
   }
 
@@ -583,12 +591,12 @@ footer {
   }
 
   .frioulCard {
-    width: 50%;
+    width: 40%;
     height: 200px;
   }
 
   .calanquesCard {
-    width: 25%;
+    width: 200px;
     height: 200px;
   }
 
@@ -597,7 +605,7 @@ footer {
   }
 
   .cardColumnTwo {
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: row;
   }
@@ -608,16 +616,20 @@ footer {
   }
 
   .notreDamePic {
-    height: 125px;
+    height: 130px;
   }
 
   .longchampCard {
-    width: 45%;
+    width: 40%;
     height: 200px;
   }
 
   .longchampPic {
-    height: 125px;
+    height: 130px;
+  }
+
+  .footerSection {
+    margin-left: 20px;
   }
 }
 
@@ -857,14 +869,12 @@ footer {
 
   nav {
     width: 20%;
-    /* display: flex; */
-    order: 1;
-    margin: 0px 10px 0px 0px;
+    margin: 0px 20px 0px 0px;
   }
 
   .anchorHebergement {
     border-bottom: none;
-    padding: 30px;
+    padding: 30px 20px;
   }
 
   .anchorHebergement:hover {
@@ -873,6 +883,7 @@ footer {
 
   .hebergeLink {
     color: black;
+    padding-right: 10px;
   }
 
   .hebergeLink:hover {
@@ -882,7 +893,7 @@ footer {
   .anchorActivités {
     border: none;
     padding: 0px;
-    margin: 0px 30px 0px 0px;
+    margin-left: 30px;
   }
 
   .anchorActivités:hover {
@@ -894,7 +905,7 @@ footer {
   }
 
   .signIn {
-    width: 5%;
+    width: 10%;
     display: flex;
     justify-content: center;
     order: 2;
@@ -981,6 +992,9 @@ footer {
     display: flex;
   }
 
+  .popTitle {
+    padding-left: 30px;
+  }
   .popularCard {
     margin-bottom: 30px;
   }
@@ -1103,7 +1117,7 @@ footer {
   }
 
   .footerSection {
-    margin: 0px 250px 0px 20px;
+    margin: 0px 220px 0px 20px;
   }
 
   .footerSection a {
