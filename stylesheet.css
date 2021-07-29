@@ -133,13 +133,14 @@ button {
 }
 
 .searchIcon {
-  width: 40%;
+  width: 20%;
   border-radius: 20px 20px 20px 20px;
   background-color: #0065ff;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 35px;
 }
 
 .filtersBlock {
@@ -736,7 +737,7 @@ footer {
   }
 
   #housingBlock {
-    width: 50%;
+    width: 60%;
     background-color: #f2f2f2;
     border-radius: 20px;
     margin-left: 15px;
@@ -761,7 +762,7 @@ footer {
     padding: 5px;
   }
 
-  housingInfo {
+  .housingInfo {
     margin: 0px 0px 20px 10px;
   }
 
@@ -857,6 +858,10 @@ footer {
 
 /* Desktop */
 @media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .containDesktop {
+    padding-left: 20px;
+  }
+
   .headerBlock {
     flex-wrap: nowrap;
     margin-top: 0px;
@@ -1085,7 +1090,7 @@ footer {
   }
 
   .frioulPic {
-    height: 110px;
+    height: 108px;
   }
 
   .calanquesCard {
@@ -1109,7 +1114,7 @@ footer {
   }
 
   .longchampPic {
-    height: 180px;
+    height: 178px;
   }
 
   footer {
@@ -1117,7 +1122,7 @@ footer {
   }
 
   .footerSection {
-    margin: 0px 220px 0px 20px;
+    margin: 0px 220px 0px 10px;
   }
 
   .footerSection a {
