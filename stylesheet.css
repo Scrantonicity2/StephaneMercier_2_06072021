@@ -95,9 +95,13 @@ nav {
 }
 
 .searchBlock {
+  width: 90%;
   height: 55px;
   display: flex;
+  justify-content: space-evenly;
   margin-top: 30px;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
 }
 
 .markerIcon {
@@ -111,8 +115,6 @@ nav {
 
 .inputField {
   width: 80%;
-  border: 2px solid #f2f2f2;
-  border-radius: 0px 20px 20px 0px;
   display: flex;
 }
 
@@ -133,14 +135,13 @@ button {
 }
 
 .searchIcon {
-  width: 20%;
+  width: 60px;
   border-radius: 20px 20px 20px 20px;
   background-color: #0065ff;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 35px;
 }
 
 .filtersBlock {
@@ -164,7 +165,7 @@ button {
 
 .filter {
   width: fit-content;
-  height: 35px;
+  height: 45px;
   font-weight: bold;
   font-size: large;
   border: 3px solid #f2f2f2;
@@ -177,8 +178,8 @@ button {
 }
 
 .filterIcon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 45px;
   border-radius: 20px;
   background-color: #deebff;
   color: #0065ff;
@@ -196,7 +197,7 @@ button {
 }
 
 .infoIcon {
-  width: 30px;
+  width: 40px;
   height: 30px;
   color: #0065ff;
   border: 1px solid #f2f2f2;
@@ -925,15 +926,17 @@ footer {
   }
 
   .searchBlock {
-    width: 35%;
+    width: 33%;
   }
 
   .markerIcon {
-    width: 10%;
+    width: 55px;
+    margin-left: -30px;
   }
+
   .inputField {
     width: 50%;
-    border-radius: 0px;
+    margin-left: -20px;
   }
 
   button {
@@ -942,10 +945,11 @@ footer {
     border: none;
     background-color: #0065ff;
     color: white;
-    font-size: large;
+    font-size: larger;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: -30px;
   }
 
   .searchIcon {
@@ -1122,7 +1126,7 @@ footer {
   }
 
   .footerSection {
-    margin: 0px 220px 0px 10px;
+    margin: 0px 220px 0px 20px;
   }
 
   .footerSection a {
