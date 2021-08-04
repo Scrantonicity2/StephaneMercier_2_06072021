@@ -5,7 +5,6 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 .headerBlock {
@@ -77,7 +76,7 @@ nav {
 }
 
 .container {
-  margin-left: 20px;
+  margin: 0px 20px 0px 20px;
 }
 
 .introBlock {
@@ -91,31 +90,31 @@ nav {
 }
 
 .introTwo {
-  font-size: large;
+  font-size: 110%;
 }
 
 .searchBlock {
-  width: 90%;
-  height: 55px;
+  width: 370px;
+  height: 50px;
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 30px;
-  border: 2px solid #f2f2f2;
+  align-items: center;
+  border: 1px solid #f2f2f2;
   border-radius: 20px;
+  margin-top: 50px;
 }
 
 .markerIcon {
-  width: 15%;
-  border-radius: 20px 0px 0px 20px;
   background-color: #f2f2f2;
+  width: 65px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px 0px 0px 20px;
 }
 
 .inputField {
-  width: 80%;
-  display: flex;
+  width: 70%;
 }
 
 input {
@@ -135,25 +134,25 @@ button {
 }
 
 .searchIcon {
-  width: 60px;
-  border-radius: 20px 20px 20px 20px;
+  width: 65px;
+  height: 100%;
   background-color: #0065ff;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
 }
 
 .filtersBlock {
-  padding-left: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 
-.filterTitle {
-  margin-left: 10px;
+.containFilters {
+  margin: 0px -10px;
 }
 
 .filtersList {
@@ -164,13 +163,12 @@ button {
 }
 
 .filter {
-  width: fit-content;
-  height: 45px;
+  height: 50px;
   font-weight: bold;
   font-size: large;
   border: 3px solid #f2f2f2;
   border-left: none;
-  border-radius: 20px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   margin: 0px 0px 10px 10px;
@@ -179,8 +177,8 @@ button {
 
 .filterIcon {
   width: 50px;
-  height: 45px;
-  border-radius: 20px;
+  height: 50px;
+  border-radius: 30px;
   background-color: #deebff;
   color: #0065ff;
   display: flex;
@@ -190,10 +188,10 @@ button {
 }
 
 .infoLine {
-  font-size: larger;
-  margin: 20px 20px 40px 20px;
+  font-size: large;
+  margin: 20px 20px 40px 0px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .infoIcon {
@@ -205,7 +203,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 .popularBlock {
@@ -231,7 +229,7 @@ h2 {
 }
 
 .popularOptions {
-  padding: 0px 0px 10px 25px;
+  padding: 0px 0px 20px 20px;
 }
 
 .popularCard {
@@ -239,7 +237,7 @@ h2 {
   color: black;
   display: flex;
   background-color: white;
-  box-shadow: 0px 0px 10px lightgray;
+  box-shadow: 0px 0px 15px lightgray;
   border-radius: 20px;
   padding-right: 20px;
   margin: 20px 20px 20px 0px;
@@ -261,7 +259,9 @@ h2 {
 .popularInfo {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  /* justify-content: space-between; */
+  /* margin: 10px 0px 0px 0px; */
+  margin-top: 20px;
 }
 
 .hotelName {
@@ -271,7 +271,7 @@ h2 {
 }
 
 .priceInfo {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .starRating {
@@ -287,7 +287,7 @@ h2 {
 }
 
 .housingOptions {
-  padding: 0px 0px 20px 15px;
+  padding: 0px 0px 5px 15px;
 }
 
 .housingCard {
@@ -308,12 +308,12 @@ h2 {
 .housingFittingImage {
   object-fit: cover;
   width: 100%;
-  height: 150px;
+  height: 130px;
   border-radius: 20px 20px 0px 0px;
 }
 
 .housingInfo {
-  margin: 0px 0px 20px 10px;
+  margin: 0px 0px 15px 20px;
 }
 
 .housingName {
@@ -329,12 +329,11 @@ h2 {
 .displayMore {
   font-weight: bold;
   font-size: larger;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding: 0px 0px 20px 20px;
 }
 
 #activityBlock {
-  padding: 10px 0px 0px 0px;
+  padding: 10px 0px 20px 0px;
 }
 
 .activityOptions {
@@ -432,7 +431,6 @@ h2 {
 }
 
 .longchampCard {
-  text-decoration: none;
   color: black;
   display: flex;
   flex-direction: column;
@@ -452,17 +450,22 @@ h2 {
 .cardName {
   font-weight: bold;
   font-size: large;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 footer {
   background-color: #f2f2f2;
+  padding: 30px 0px 30px 10px;
 }
 
 .footerSection {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+}
+
+.footerSection a {
+  color: black;
 }
 
 /* iPad */
@@ -530,6 +533,21 @@ footer {
 
   .searchIcon {
     display: none;
+  }
+
+  .infoLine {
+    align-items: center;
+  }
+
+  .infoIcon {
+    width: 30px;
+    height: 30px;
+    color: #0065ff;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   h2 {
@@ -717,8 +735,21 @@ footer {
     margin-right: 20px;
   }
 
+  .infoIcon {
+    width: 40px;
+    height: 40px;
+    color: #0065ff;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+  }
+
   .infoLine {
     font-size: medium;
+    align-items: center;
   }
 
   main {
@@ -864,7 +895,7 @@ footer {
 /* Desktop */
 @media only screen and (min-width: 1200px) {
   .containDesktop {
-    padding-left: 20px;
+    padding-left: 30px;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -905,11 +936,12 @@ footer {
   .anchorActivités {
     border: none;
     padding: 0px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .anchorActivités:hover {
     border-top: 1px solid #0065ff;
+    padding: 0px;
   }
 
   .activLink:hover {
@@ -936,7 +968,7 @@ footer {
   }
 
   .markerIcon {
-    width: 55px;
+    width: 15%;
     margin-left: -30px;
   }
 
@@ -956,6 +988,11 @@ footer {
     justify-content: center;
     align-items: center;
     margin-right: -30px;
+    cursor: pointer;
+  }
+
+  .searchLink {
+    color: white;
   }
 
   .searchIcon {
@@ -979,6 +1016,7 @@ footer {
   .filtersList :hover {
     background-color: #deebff;
     color: #0065ff;
+    cursor: pointer;
   }
 
   .filterIcon {
@@ -987,8 +1025,13 @@ footer {
     margin: 0px 15px 0px 0px;
   }
 
+  .infoIcon {
+    width: 30px;
+  }
+
   .infoLine {
     font-size: medium;
+    align-items: center;
   }
 
   main {
@@ -1129,6 +1172,7 @@ footer {
 
   footer {
     display: flex;
+    padding: 40px 0px 40px 20px;
   }
 
   .footerSection {

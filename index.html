@@ -18,6 +18,7 @@
     />
   </head>
   <body>
+    <!-- Global "conatiner" div to handle Margins and Paddings in CSS -->
     <div class="containDesktop">
       <!-- Logo and Navigation Menu-->
       <header class="headerBlock">
@@ -64,50 +65,65 @@
               maxlength="20"
             />
           </div>
-          <span class="searchIcon">
+          <div class="searchIcon">
             <i class="fas fa-search"></i>
-          </span>
-          <button type="button" disabled="disabled">Rechercher</button>
+          </div>
+          <button class="searchButton" type="button">
+            <a class="searchLink" href="#">Rechercher</a>
+          </button>
         </div>
       </div>
 
       <!-- Filters section -->
-      <div class="filtersBlock">
-        <h3 class="filterTitle">Filtres</h3>
-        <ul class="filtersList">
-          <li class="filter">
-            <div class="filterIcon">
-              <i class="fas fa-solid fa-money-bill-wave"></i>
-            </div>
-            Économique
-          </li>
+      <div class="container">
+        <div class="filtersBlock">
+          <h3 class="filterTitle">Filtres</h3>
+          <div class="containFilters">
+            <ul class="filtersList">
+              <!-- Filter ECO-->
+              <li class="filter">
+                <div class="filterIcon">
+                  <i class="fas fa-solid fa-money-bill-wave"></i>
+                </div>
+                Économique
+              </li>
 
-          <li class="filter">
-            <div class="filterIcon">
-              <i class="fas fa-solid fa-child"></i>
-            </div>
-            Familial
-          </li>
-          <li class="filter">
-            <div class="filterIcon">
-              <i class="fas fa-solid fa-heart"></i>
-            </div>
-            Romantique
-          </li>
-          <li class="filter">
-            <div class="filterIcon">
-              <i class="fas fa-solid fa-dog"> </i>
-            </div>
-            Animaux autorisés
-          </li>
-        </ul>
+              <!-- Filter FAMILIAL -->
+              <li class="filter">
+                <div class="filterIcon">
+                  <i class="fas fa-solid fa-child"></i>
+                </div>
+                Familial
+              </li>
+
+              <!-- Filter ROMANTIQUE -->
+              <li class="filter">
+                <div class="filterIcon">
+                  <i class="fas fa-solid fa-heart"></i>
+                </div>
+                Romantique
+              </li>
+
+              <!-- Filter ANIMAUX -->
+              <li class="filter">
+                <div class="filterIcon">
+                  <i class="fas fa-solid fa-dog"> </i>
+                </div>
+                Animaux autorisés
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="infoLine">
-        <div class="infoIcon">
-          <i class="fas fa-solid fa-info"></i>
+      <!-- Information Line-->
+      <div class="container">
+        <div class="infoLine">
+          <div class="infoIcon">
+            <i class="fas fa-solid fa-info"></i>
+          </div>
+          Plus de 500 logements disponibles dans cette ville
         </div>
-        Plus de 500 logements disponibles dans cette ville
       </div>
 
       <main>
@@ -121,7 +137,6 @@
               </div>
             </div>
           </div>
-
           <div class="popularOptions">
             <a href="#" class="popularCard">
               <div class="clickableImagePop">
