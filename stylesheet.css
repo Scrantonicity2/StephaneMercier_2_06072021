@@ -95,18 +95,18 @@ nav {
 
 .searchBlock {
   width: 370px;
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
-  border: 1px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
   border-radius: 20px;
   margin-top: 50px;
 }
 
 .markerIcon {
   background-color: #f2f2f2;
-  width: 65px;
-  height: 100%;
+  width: 20%;
+  height: 105%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,7 +114,7 @@ nav {
 }
 
 .inputField {
-  width: 70%;
+  width: 60%;
 }
 
 input {
@@ -134,8 +134,8 @@ button {
 }
 
 .searchIcon {
-  width: 65px;
-  height: 100%;
+  width: 20%;
+  height: 105%;
   background-color: #0065ff;
   color: white;
   display: flex;
