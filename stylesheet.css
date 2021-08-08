@@ -5,10 +5,10 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .headerBlock {
-  width: 100%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -24,12 +24,11 @@ a {
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  color: #0065ff;
+  font-weight: 700;
 }
 
 .signinLink {
-  text-decoration: none;
-  color: #0065ff;
-  font-weight: 700;
 }
 
 nav {
@@ -40,39 +39,33 @@ nav {
 }
 
 .navMenu {
+  list-style-type: none;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 0px;
   margin: 0px;
 }
 
-.anchorHebergement {
+.navLink {
+  border-bottom: 3px solid #0065ff;
+  padding-bottom: 20px;
+}
+
+.hebergeLink {
   width: 50%;
+  color: #0065ff;
   border-bottom: 2px solid #0065ff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
-.anchorActivités {
+.activityLink {
   width: 50%;
   border-bottom: 2px solid #f2f2f2;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 15px;
-}
-
-.hebergeLink {
-  text-decoration: none;
-  color: #0065ff;
-}
-
-.activLink {
-  text-decoration: none;
-  color: black;
 }
 
 .container {
@@ -129,7 +122,7 @@ input::placeholder {
   font-family: "Raleway", "Times New Roman", Times, serif;
 }
 
-button {
+.searchButton {
   display: none;
 }
 
@@ -257,11 +250,9 @@ h2 {
 }
 
 .popularInfo {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  /* margin: 10px 0px 0px 0px; */
-  margin-top: 20px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin-top: 10px;
 }
 
 .hotelName {
@@ -543,7 +534,7 @@ footer {
     font-family: "Raleway", "Times New Roman", Times, serif;
   }
 
-  button {
+  .searchButton {
     width: 50%;
     height: 105%;
     border-radius: 0px 20px 20px 0px;
@@ -551,12 +542,13 @@ footer {
     background-color: #0065ff;
     color: white;
     font-size: large;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  button a {
+  .searchButton a {
     color: white;
   }
 
@@ -769,7 +761,7 @@ footer {
     font-family: "Raleway", "Times New Roman", Times, serif;
   }
 
-  button {
+  .searchButton {
     width: 40%;
     height: 105%;
     border-radius: 0px 20px 20px 0px;
@@ -777,12 +769,13 @@ footer {
     background-color: #0065ff;
     color: white;
     font-size: large;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  button a {
+  .searchButton a {
     color: white;
   }
 
@@ -911,6 +904,7 @@ footer {
   .frioulCard {
     height: 185px;
   }
+
   .frioulPic {
     height: 110px;
   }
@@ -959,57 +953,70 @@ footer {
 /* Desktop */
 @media only screen and (min-width: 1200px) {
   .containDesktop {
-    padding-left: 30px;
+    padding: 0px 30px 0px 30px;
     max-width: 1440px;
     margin: 0 auto;
   }
 
   .headerBlock {
     flex-wrap: nowrap;
-    margin-top: 0px;
+    align-items: flex-end;
+    margin-top: 0;
+    margin-bottom: 55px;
   }
 
   .siteLogo {
+    position: relative;
+    top: 13px;
     width: 70%;
-    padding-top: 30px;
+  }
+
+  .navMenu {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+  }
+
+  /* .navLink {
+    padding: 50px 10px 0;
+    color: black;
+    border-top: 1px solid white;
+  }
+
+  .navLink:hover {
+    color: #0065ff;
+    border-top: 1px solid #0065ff;
+  } */
+
+  .hebergeLink {
+    padding: 50px 10px 0;
+    color: black;
+    border-top: 1px solid white;
+  }
+
+  .hebergeLink :hover {
+    padding-top: 50px;
+    color: #0065ff;
+    border-top: 1px solid #0065ff;
+  }
+
+  .activityLink {
+    padding: 50px 10px 0;
+    color: black;
+    border-top: 1px solid white;
+  }
+
+  .activityLink :hover {
+    color: #0065ff;
+    border-top: 1px solid #0065ff;
   }
 
   nav {
     width: 20%;
     margin: 0px 20px 0px 0px;
-  }
-
-  .anchorHebergement {
-    border-bottom: none;
-    padding: 30px 20px;
-  }
-
-  .anchorHebergement:hover {
-    border-top: 1px solid #0065ff;
-  }
-
-  .hebergeLink {
-    color: black;
-    padding-right: 10px;
-  }
-
-  .hebergeLink:hover {
-    color: #0065ff;
-  }
-
-  .anchorActivités {
-    border: none;
-    padding: 0px;
-    margin-left: 20px;
-  }
-
-  .anchorActivités:hover {
-    border-top: 1px solid #0065ff;
-    padding: 0px;
-  }
-
-  .activLink:hover {
-    color: #0065ff;
+    order: 1;
   }
 
   .signIn {
@@ -1017,6 +1024,8 @@ footer {
     display: flex;
     justify-content: center;
     order: 2;
+    font-weight: 700;
+    color: #0065ff;
   }
 
   .introOne {
@@ -1052,6 +1061,9 @@ footer {
   }
 
   input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
     font-weight: bolder;
     font-size: large;
     border: none;
@@ -1063,7 +1075,7 @@ footer {
     font-family: "Raleway", "Times New Roman", Times, serif;
   }
 
-  button {
+  .searchButton {
     width: 30%;
     height: 105%;
     border-radius: 0px 20px 20px 0px;
@@ -1071,15 +1083,11 @@ footer {
     background-color: #0065ff;
     color: white;
     font-size: larger;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
-
-  button a :hover {
-    color: #0065ff;
-    background-color: #deebff;
   }
 
   .searchLink {
@@ -1267,7 +1275,7 @@ footer {
   }
 
   .footerSection {
-    margin: 0px 220px 0px 20px;
+    margin: 0px 200px 0px 20px;
   }
 
   .footerSection a {
