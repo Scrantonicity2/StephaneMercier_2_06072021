@@ -943,8 +943,327 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1315px) {
+  .containDesktop {
+    padding: 0px 30px 0px 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .headerBlock {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    margin-bottom: 55px;
+  }
+
+  .siteLogo {
+    position: relative;
+    top: 18px;
+    width: 70%;
+  }
+
+  .navMenu {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+  }
+
+  .hebergeLink {
+    margin-right: 50px;
+  }
+  .navLink {
+    padding: 50px 10px 0;
+    color: black;
+    border-top: 1px solid white;
+    border-bottom: none;
+    display: unset;
+  }
+
+  .navLink :hover {
+    padding-top: 70px;
+    color: #0065ff;
+    border-top: 1px solid #0065ff;
+  }
+
+  nav {
+    width: 20%;
+    margin: 0px 20px 0px 0px;
+    order: 1;
+  }
+
+  .signIn {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    order: 2;
+    font-weight: 700;
+    color: #0065ff;
+  }
+
+  .introOne {
+    font-size: x-large;
+  }
+
+  .introTwo {
+    margin-top: -15px;
+  }
+
+  .searchBlock {
+    width: 450px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+    margin: 20px 0px;
+  }
+
+  .markerIcon {
+    background-color: #f2f2f2;
+    width: 15%;
+    height: 105%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .inputField {
+    width: 60%;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    font-weight: bolder;
+    font-size: large;
+    border: none;
+    padding-left: 15px;
+  }
+
+  input::placeholder {
+    color: black;
+    font-family: "Raleway", "Times New Roman", Times, serif;
+  }
+
+  .searchButton {
+    width: 30%;
+    height: 105%;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    background-color: #0065ff;
+    color: white;
+    font-size: larger;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .searchLink {
+    color: white;
+  }
+
+  .searchIcon {
+    display: none;
+  }
+
+  h3 {
+    margin-right: 15px;
+  }
+
+  .filtersBlock {
+    align-items: baseline;
+  }
+
+  .filter {
+    margin: 10px 20px 0px 10px;
+    padding: 5px 35px 5px 0px;
+    border-radius: 30px;
+  }
+
+  .filtersList :hover {
+    background-color: #deebff;
+    color: #0065ff;
+    cursor: pointer;
+  }
+
+  .filterIcon {
+    padding: 5px;
+    border-radius: 30px;
+    margin: 0px 15px 0px 0px;
+  }
+
+  .infoIcon {
+    width: 30px;
+  }
+
+  .infoLine {
+    font-size: medium;
+    align-items: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .popularBlock {
+    order: 2;
+    width: 50%;
+    margin: 0px 20px 0px 20px;
+    border-radius: 20px;
+  }
+
+  .imageFittingCard {
+    display: flex;
+  }
+
+  .popTitle {
+    padding-left: 30px;
+  }
+
+  .popularCard {
+    margin-bottom: 30px;
+  }
+
+  .popularCard:hover {
+    transform: scale(1.05);
+  }
+
+  .popularInfo {
+    margin-top: 10px;
+  }
+
+  #housingBlock {
+    width: 50%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .housingOptions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .housingCard {
+    width: 40%;
+  }
+
+  .housingCard:hover {
+    transform: scale(1.05);
+  }
+
+  .housingFittingImage {
+    height: 100px;
+  }
+
+  .clickableCard {
+    padding: 5px;
+  }
+
+  housingInfo {
+    margin: 0px 0px 10px 15px;
+  }
+
+  .housingName {
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 5px;
+  }
+
+  .housingPrice {
+    margin-bottom: 15px;
+  }
+
+  .starRating {
+    margin-bottom: 0px;
+  }
+
+  #activityBlock {
+    width: 100%;
+  }
+
+  .activityOptions {
+    display: flex;
+  }
+
+  .vieuxPortCard {
+    width: 25%;
+  }
+
+  .vieuxPortPic {
+    height: 405px;
+  }
+
+  .cardColumnOne {
+    width: 25%;
+  }
+
+  .pomèguesCard {
+    margin-bottom: 40px;
+  }
+
+  .pomèguesPic {
+    height: 200px;
+  }
+
+  .frioulPic {
+    height: 108px;
+  }
+
+  .calanquesCard {
+    width: 25%;
+  }
+
+  .calanquesPic {
+    height: 405px;
+  }
+
+  .cardColumnTwo {
+    width: 25%;
+  }
+
+  .notreDameCard {
+    margin-bottom: 40px;
+  }
+
+  .notreDamePic {
+    height: 130px;
+  }
+
+  .longchampPic {
+    height: 178px;
+  }
+
+  footer {
+    display: flex;
+    padding: 40px 0px 40px 20px;
+  }
+
+  .footerSection {
+    margin: 0px 200px 0px 20px;
+  }
+
+  .footerSection a {
+    color: black;
+  }
+
+  .footerSection a:hover {
+    color: #0065ff;
+  }
+}
+
 /* Desktop */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1315px) {
   .containDesktop {
     padding: 0px 30px 0px 30px;
     max-width: 1440px;
@@ -1127,6 +1446,7 @@ footer {
   .popTitle {
     padding-left: 30px;
   }
+
   .popularCard {
     margin-bottom: 30px;
   }
@@ -1136,7 +1456,7 @@ footer {
   }
 
   .popularInfo {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   #housingBlock {
